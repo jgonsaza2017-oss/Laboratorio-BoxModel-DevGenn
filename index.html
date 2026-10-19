@@ -4,52 +4,93 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Credencial Digital - DevGenn</title>
+
+  <!-- Google Fonts: Poppins y Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (Iconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Hoja de estilos -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Contenedor general -->
+  <!-- Contenedor General (Tarjeta Credencial) -->
   <article class="credencial">
+
+    <!-- Insignia Flotante (Misión 5) -->
+    <span class="insignia-badge">
+      <i class="fa-solid fa-crown"></i> SAIYAN CORE
+    </span>
 
     <!-- SECCIÓN 1: Encabezado -->
     <header class="credencial-header">
       <div class="marca-empresa">
-        <h2>DevGenn</h2>
+        <h2><i class="fa-solid fa-terminal"></i> DevGenn</h2>
       </div>
-      <p class="tipo-documento">CREDENCIAL DIGITAL</p>
+      <p class="tipo-documento">CREDENCIAL DIGITAL OFICIAL</p>
     </header>
 
-    <!-- SECCIÓN 2: Información -->
+    <!-- SECCIÓN 2: Cuerpo de Información -->
     <section class="credencial-body">
-     <!-- Avatar: Fotografía carnet - Vegeta Rey Saiyajin -->
+      
+      <!-- Contenedor Avatar con estado Online -->
       <div class="avatar-box">
         <img 
-          src="https://wallpapers.com/images/featured/vegeta-pictures-b258l45j4t1oxr35.jpg" 
-          alt="Fotografía carnet de Vegeta" 
+         src="johan.jpeg" 
+          alt="Fotografía oficial de Johan González" 
           class="avatar-foto"
         >
+        <span class="status-online" title="Estado: En línea"></span>
       </div>
 
       <div class="info-personal">
-        <h1>Johan González</h1>
-        <p>Junior Full Stack Developer</p>
+        <h1>Johan Alexis González Sánchez</h1>
+        <p class="rol">Junior Full Stack Developer</p>
       </div>
 
+      <!-- Lista de detalles con iconos vectoriales (Sin <br>) -->
       <ul class="lista-detalles">
-        <li><strong>Ciudad:</strong> Bogotá D.C.</li>
-        <li><strong>Correo:</strong> jgonsaza2017@gmail.com</li>
-        <li><strong>Tecnología:</strong> Java & Spring Boot</li>
-        <li><strong>Hobby:</strong> Entrenamiento y Deportes</li>
-        <li><strong>GitHub:</strong> /jgonsaza2017-oss</li>
+        <li>
+          <i class="fa-solid fa-location-dot"></i>
+          <span><strong>Ciudad:</strong> Bogotá D.C., Colombia</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <span><strong>Correo:</strong> jgonsaza2017@gmail.com</span>
+        </li>
+        <li>
+          <i class="fa-brands fa-java"></i>
+          <span><strong>Stack:</strong> Java, Spring Boot & JavaScript</span>
+        </li>
+        <li>
+          <i class="fa-brands fa-github"></i>
+          <span><strong>GitHub:</strong> /jgonsaza2017-oss</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-dumbbell"></i>
+          <span><strong>Enfoque:</strong> Disciplina, Pesas y Código</span>
+        </li>
       </ul>
 
-      <p class="frase-personal">"Superando límites a través de la disciplina y el código."</p>
+      <p class="frase-personal">
+        "Superando los límites a través de la constancia y el desarrollo continuo."
+      </p>
     </section>
 
-    <!-- SECCIÓN 3: Pie -->
+    <!-- SECCIÓN 3: Pie de la Credencial -->
     <footer class="credencial-footer">
-      <p>DevGenn ID: 2026-COL</p>
-      <p>SECURE VERIFICATION</p>
+      <div class="footer-item">
+        <i class="fa-solid fa-fingerprint"></i>
+        <span>ID: 2026-COL-FS</span>
+      </div>
+      <div class="footer-item">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>VERIFIED MEMBER</span>
+      </div>
     </footer>
 
   </article>
